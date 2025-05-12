@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Advanced Level Movies Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<div>
+    <header>
+        <nav>
+            <a href="#" class="logo"><img src="../Image/logo.jpg" alt=""></a>
+            <div class="end_bx">
+                <ul class="navbar-expand-sm ">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">contegory</a></li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="search movies...." id="secarh">
+                    <i class='bx bx-search' id="search_icon"></i>
+                </div>
+                <div class="bell">
+                    <i class='bx bxs-bell'></i>
+                </div>
+                <div class="user">
+                    <img src="../Image/profile.jpg" alt="">
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <h6>Duration: <span id="header_dur">1h 47min</span></h6>
+            <h3 id="header_gen"><i class='bx bxs-star'></i>6.5
+                <span>Action / Adventure / Sci-Fi</span>
+            </h3>
+            <h1 id="header_title">Rampage</h1>
+            <p id="header_pra">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Consequatur necessitatibus
+                ullam ab magni perferendis,<br> asperiores dolores sapiente quas, vel in saepe dolor.
+                <br>Atque, quod accusamus ex culpa eveniet eum ut?
+            <div class="btns">
+                <a href="#video"><button><i class='bx bx-play' id="play_btn"></i>WATCH</button></a>
+                <button><i class='bx bx-plus'></i>ADD LIST</button>
+            </div>
+            </p>
+        </div>
+        <div class="slider_btns">
+            <h6 class="slider"></h6>
+            <h6 class="slider"></h6>
+            <h6 class="slider"></h6>
+        </div>
+    </header>
+
+    <div class="tranding_box">
+        <li><a href="#" class="active"><i class='bx bx-chevrons-up'></i>Trands Now <span></span></a></li>
+        <li><a href="#"><i class='bx bxs-hot'></i>Popular <span></span></a></li>
+        <li><a href="#"><i class='bx bxs-star'></i>Prefrenes <span></span></a></li>
+        <li><a href="#"><i class='bx bx-plus'></i>Recently Added <span></span></a></li>
+    </div>
+
+    <div class="cato_box" id="cato_box">
+        <button id="action1">Action</button>
+        <button id="crime1">Crime</button>
+        <button>Adeventure</button>
+        <button>Biography</button>
+        <button>Animation</button>
+        <button>Comady</button>
+        <button>Documentary</button>
+        <button id="drama1">Drama</button>
+        <button>webseries</button>
+        <button>SciFi</button>
+        <button>Horor</button>
+        <div class="cato_left_right">
+            <i class='bx bx-chevron-down' id="left_scroll"></i>
+        </div>
+        <div class="cato_left_right">
+            <i class='bx bx-chevron-down' id="right_scroll"></i>
+        </div>
+    </div>
+    <div class="movie-bx_1" id="movie_bx_1">
+        <button id="left_scrolll"><i class='bx bx-chevron-down'></i></button>
+        <button id="right_scrolll"><i class='bx bx-chevron-down'></i></button>
+        <!-- <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>Venom 2 </h5>
+                    <h6>
+                        <span>2018</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>6.5</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>A Perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div> -->
+        <div class="movie_bxx" id="action_bx"></div>
+        <div class="movie_bxx" id="crime_bx"></div>
+        <div class="movie_bxx" id="drama_bx"></div>
+    </div>
+
+    <div class="video_bx">
+        <video src="../video/Pir.mp4 " id="video"></video>
+        <div class="control">
+            <div class="play_redo">
+                <i class='bx bx-play' id="play"></i>
+                <i class='bx bx-chevrons-left' id="sec_30"></i>
+                <span>10</span>
+            </div>
+            <div class="start_seekbar_end">
+                <span id="start_time">28.04</span>
+                <div class="seek">
+                    <input type="range" id="seek" value="0">
+                    <h5 id="seek_2"></h5>
+                    <h4></h4>
+                    <h6 id="seek_dot"></h6>
+                </div>
+                <span id="end_time">40.06</span>
+            </div>
+            <div class="cc_vol_screen">
+                <i class='bx bxs-captions'></i>
+                <i class='bx bxs-volume-full' id="vol_icon"></i>
+                <input type="range" name="vol" id="vol">
+                <i class='bx bx-exit-fullscreen' id="full_screen"></i>
+            </div>
+        </div>
+        <h4 class="title_video">Rampage hd coming soon</h4>
+        <span class="watching"><i class='bx bx-low-vision'></i></span>
+        <div class="heart_pluse"><i class='bx bxs-heart'></i> <i class='bx bx-plus'></i></div>
+        <div class="video_list">
+            <img src="../Image/Ant man.jpg" alt="" class="video_1">
+            <img src="../Image/Rampage.jpg" alt="" class="video_1">
+            <img src="../Image/venon red.jpg" alt="" class="video_1">
+        </div>
+    </div>
+    <div class="tranding_box" style="margin-top: 20px;">
+        <li><a href="#" class="active"><i class='bx bx-photo-album'></i>Movices<span></span></a></li>
+        <li><a href="#"><i class='bx bx-film'></i>Series <span></span></a></li>
+        <li><a href="#"><i class='bx bx-check'></i>Original Series <span></span></a></li>
+        <li><a href="#">Tralier <span></span></a></li>
+    </div>
+    <div class="cato_box cato_bx2">
+        <div class="left_cato">
+            <button>Sort by:</button>
+            <button id="all_btn">All</button>
+            <button id="latest_btn">Latest</button>
+            <button id="year">Year <i class='bx bx-chevron-down'></i>
+                <div class="year_bx">
+                    <li id="year2022_btn">2022</li>
+                    <li id="year2021_btn">2021</li>
+                    <li id="year2020_btn">2020</li>
+                    <li>2019</li>
+                    <li>2018</li>
+                    <li>2017</li>
+                    <li>2016</li>
+                    <li>2015</li>
+                    <li>2014</li>
+
+                </div>
+            </button>
+            <button id="a_z">A-Z <i class='bx bx-chevron-down'></i>
+                <div class="year_bx letter_bx">
+                    <li id="letter_a_btn">A</li>
+                    <li id="letter_b_btn">B</li>
+                    <li>C</li>
+                    <li>D</li>
+                    <li>E</li>
+                    <li>F</li>
+                    <li>G</li>
+                    <li id="letter_t_btn">I</li>
+                    <li>Z</li>
+
+                </div>
+            </button>
+        </div>
+        <div class="right-cato">
+            <i class='bx bxs-star'></i>
+            <input type="range" name="" id="change_input" min="4.2" max="9.9">
+            <span>7.8</span>
+        </div>
+    </div>
+    <div class="movie-bx_1 movie_bx_2">
+        <div class="all" id="all"></div>
+        <div class="latest" id="latest"></div>
+        <div class="year" id="year_2022"></div>
+        <div class="year" id="year_2021"></div>
+        <div class="year" id="year_2020"></div>
+        <div class="letter" id="letter_a"></div>
+        <div class="letter" id="letter_b"></div>
+        <div class="letter" id="letter_t"></div>
+        <div class="rate_change" id="rate4"></div>
+        <div class="rate_change" id="rate8"></div>
+        <!-- <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>Venom 2 </h5>
+                    <h6>
+                        <span>2018</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>6.5</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>A Perfact</h5>
+                    <h6>
+                        <span>2020</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>9.2</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="../Image/venon red.jpg" alt="">
+                <div class="content">
+                    <h5>ABCD </h5>
+                    <h6>
+                        <span>2017</span>
+                        <div class="rate">
+                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-low-vision'></i>
+                            <i class='bx bxs-star'></i>
+                            <h6>8.3</h6>
+                        </div>
+                    </h6>
+                </div>
+            </a>
+        </div> -->
+    </div>
+    <script src="index.js"></script>
+    </body>
+
+</html>
